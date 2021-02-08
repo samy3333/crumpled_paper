@@ -34,7 +34,15 @@ function draw() {
   groundObject.display();
   dustbinObj.display();
   paper.display();
-  
+  keyPressed();
 
+}
+
+function keyPressed(){
+	if(keyCode===UP_ARROW){
+		paper.velocityX= 2;
+		paper.velocityY= -2;
+		Matter.Body.setStatic(paper,false);
+	}
 }
 
