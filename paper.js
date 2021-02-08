@@ -16,12 +16,6 @@ class Paper{
     display()
 	{
 		
-		if(keyCode===UP_ARROW){
-			paper.velocityX= 2;
-			paper.velocityY= -2;
-
-			
-		}
 			
 			var Pos=this.body.position;		
 
